@@ -1,0 +1,24 @@
+.section-title {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: $main-font-family;
+  font-size: 30px;
+  font-weight: 700;
+  color: $main-color-titles;
+  & span {
+    display: block;
+    font-family: $therd-font-family;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  &--underline {
+    &::after {
+      @include pseudo(block);
+      width: 61px;
+      height: 4px;
+      background-color: $main-color;
+      margin: 40px auto 60px;
+    }
+  }
+}

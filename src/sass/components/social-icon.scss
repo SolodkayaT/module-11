@@ -1,0 +1,31 @@
+.social-list {
+  &__btn {
+    width: 57px;
+    height: 57px;
+    background-color: $secondary-color;
+    margin: 1px;
+    border: none;
+    @include flex('center');
+  }
+  &__btn svg {
+    fill: $main-color;
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    fill: $main-color;
+  }
+  &__btn--hover {
+    &:hover {
+      background-color: $main-color;
+      & svg {
+        fill: $banner-text-color;
+      }
+    }
+  }
+  &__overlay {
+    height: 100%;
+    @include flex('center');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

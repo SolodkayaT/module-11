@@ -1,0 +1,46 @@
+.team-section {
+  &__list {
+    @include flex();
+  }
+  &__description {
+    text-align: center;
+    padding: 0 135px 90px 135px;
+    @extend %list-description;
+  }
+  &__card {
+    position: relative;
+    width: 380px;
+  }
+  &__img {
+    display: block;
+  }
+  &__name {
+    margin-top: 25px;
+    text-align: center;
+    @extend %list-title;
+  }
+  &__occupation {
+    text-align: center;
+    font-family: $secondary-font-family;
+    font-weight: 300;
+    font-style: italic;
+    color: $main-color-description;
+    margin-bottom: 85px;
+    @extend %list-description;
+  }
+  &__card--hover {
+    &:hover .overlay,
+    &:hover .team-section__img {
+      transition: 200ms;
+      transition-timing-function: linear;
+      transform: translate(-5px, -5px);
+    }
+    &:hover .overlay {
+      visibility: visible;
+      z-index: 2;
+    }
+    &:hover .team-section__img {
+      box-shadow: 8px 8px $icon-service--color;
+    }
+  }
+}

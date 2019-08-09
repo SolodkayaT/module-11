@@ -1,0 +1,15 @@
+%list-title {
+  font-family: $main-font-family;
+  font-size: 14px;
+  font-weight: 400;
+  color: $main-color-titles;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+%list-description {
+  font-family: $secondary-font-family;
+  font-size: 15px;
+  font-weight: 400;
+  color: $main-color-description;
+  line-height: 25px;
+}

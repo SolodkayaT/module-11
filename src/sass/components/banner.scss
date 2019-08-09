@@ -1,0 +1,67 @@
+.banner {
+  width: 100vw;
+  height: auto;
+  margin-bottom: 42px;
+  position: relative;
+  text-align: center;
+
+  &::after {
+    @include pseudo(block, '');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, $secondary-color, $main-color);
+    opacity: 0.9;
+    left: 0;
+    top: 0;
+  }
+  &__text,
+  &__btn {
+    position: relative;
+    z-index: 2;
+  }
+  &__text {
+    padding-top: 225px;
+    margin-bottom: 125px;
+    color: $banner-text-color;
+    margin-bottom: 42px;
+  }
+  &__btn {
+    padding-bottom: 220px;
+  }
+  &__description {
+    font-family: $title-decoration-font-family;
+    font-size: 72px;
+    margin-bottom: 21px;
+  }
+  &__title {
+    font-family: $main-font-family;
+    font-size: 150px;
+    text-transform: uppercase;
+    margin-top: 0;
+    line-height: 150px;
+  }
+
+  &__title span {
+    display: block;
+  }
+
+  &__link {
+    color: $banner-text-color;
+    border: 3px solid $banner-text-color;
+    line-height: 41px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-family: $main-font-family;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &--image {
+    @include bg-image('../../images/photo/Layer 15@1X-min.png');
+  }
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    &--image {
+      @include bg-image('../../images/photo/Layer 15@2X-min.png');
+    }
+  }
+}

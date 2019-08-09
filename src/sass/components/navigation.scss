@@ -1,0 +1,40 @@
+.navigation {
+  &__menu {
+    display: flex;
+    list-style: none;
+  }
+  &__link {
+    font-family: $main-font-family;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $banner-text-color;
+    text-decoration: none;
+  }
+  &__items {
+    margin-right: 55px;
+    padding-bottom: 10px;
+  }
+  &__menu li:last-child {
+    margin-right: 0;
+  }
+  &__link--hover:hover {
+    color: $secondary-color;
+    border-bottom: 4px solid $secondary-color;
+    transition: 200ms;
+    transition-timing-function: linear;
+    fill: $secondary-color;
+    & svg {
+      fill: $secondary-color;
+    }
+  }
+  &__link--icon {
+    width: 20px;
+    height: 20px;
+    & svg {
+      width: 18px;
+      height: 18px;
+      fill: $banner-text-color;
+    }
+  }
+}

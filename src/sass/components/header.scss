@@ -1,0 +1,9 @@
+.header-section {
+  &__navigation {
+    width: 1200px;
+    @include flex();
+    margin: 25px 0 110px 0;
+    z-index: 3;
+    position: absolute;
+  }
+}

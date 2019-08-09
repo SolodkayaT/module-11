@@ -1,0 +1,19 @@
+.footer {
+  @include flex();
+  margin-bottom: 10px;
+  border-top: 2px solid $footer-color;
+  padding-top: 10px;
+
+  &__info {
+    font-family: $main-font-family;
+    font-size: 14px;
+    font-weight: 400;
+    color: $main-color-description;
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    color: $main-color;
+    text-decoration: none;
+  }
+}
